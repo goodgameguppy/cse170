@@ -13,6 +13,7 @@
     main ul {
         display: grid;
         justify-items: center;
+        gap: 5px;
     }
     li {
         
