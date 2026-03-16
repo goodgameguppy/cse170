@@ -9,6 +9,7 @@
     header {
         display: grid;
         grid-template-columns: 100px 1fr;
+        justify-items: center;
     }
     header img {
         width: 100px;
@@ -26,6 +27,12 @@
     }
 
 /*body CSS*/
+    main {
+        justify-items: center;
+        text-align: center;
+        width: 800px;
+        justify-self: center;
+    }
     main ul {
         display: grid;
         justify-items: center;
