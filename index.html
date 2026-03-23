@@ -3,9 +3,10 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Timer</title>
+    <title>FocusGuard – Stay Focused, Block Distractions</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -13,96 +14,126 @@
         <img src="images/logo.png" alt="logo">
         <h1>Focus Guard</h1>
     </header>
-    <hr>
+
     <main>
-        <h2>Our Purpose</h2>
-        <p>Need help studying? Are you on websites you shouldn't be? We've got you! This study
-            timer is designed to help you stay focused when you're studying or need to stay focused at work.
-        </p>
-        <button onclick="alert('Are you sure?')">DOWNLOAD</button>
-    <ul>
-        <li>
-            First Item<br>
-            <img src="path/to/image1.jpg" alt="Description of image 1"> 
-        </li>
-        <li>
-            Second Item<br>
-            <img src="path/to/image2.jpg" alt="Description of image 2"> 
-        </li>
-        <li>
-            Third Item<br>
-            <img src="path/to/image3.jpg" alt="Description of image 3"> 
-        </li>
-        <li>
-            Fourth Item<br>
-            <img src="path/to/image4.jpg" alt="Description of image 4"> 
-        </li>
-    </ul>
-    <div id="faq">
-        <h2>Frequently Asked Questions (FAQ):</h2>
-        <div>    
-            <details>
-                <summary>What is the purpose of the study timer?</summary>
-                <p>The purpose of the study timer is to help you stay focused when you're studying or need to stay focused at work.</p>
-            </details>
-            <details>
-                <summary>How does the study timer work?</summary>
-                <p>The study timer works by setting a countdown timer for a specific study session. 
-                    During the session, it blocks access to distracting websites and provides gentle reminders to stay focused.</p>
-            </details>
-            <details>
-                <summary>What are the benefits of using the study timer?</summary>
-                <p>The benefits of using the study timer include improved focus, increased productivity, and better time management.</p>
-            </details>
-            <details>
-                <summary>How can I customize the study timer?</summary>
-                <p>You can customize the study timer by setting the duration of each study session, choosing which websites to block, and adjusting the frequency of reminders.</p>
-            </details>
-            <details>
-                <summary>Is the study timer free to use?</summary>
-                <p>Yes, the study timer is free to use. You can download it from our website and start using it right away.</p>
-            </details>
-            <details>
-                <summary>Can I use the study timer on multiple devices?</summary>
-                <p>Yes, you can use the study timer on multiple devices. Simply download and install it on each device you want to use it on.</p>
-            </details>
+        <section class="hero">
+            <h2>Our Purpose</h2>
+            <p>
+                Struggling to stay on task? Distracted by social media or endless tabs? FocusGuard has you covered! 
+                This powerful browser extension combines a customizable focus timer with smart site blocking to help 
+                you study better, work more productively, and reclaim your time.
+            </p>
+            <button onclick="alert('Are you sure?')">Download</button>
+
+            <div class="video-placeholder">
+                <div class="video-thumb">
+                    <img src="images/video-placeholder.jpg" alt="FocusGuard Installation Video Preview">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <p class="video-caption">Watch our quick installation guide (coming soon)</p>
+            </div>
+        </section>
+
+        <section class="instructions" id="instructions">
+            <h2>How to Install FocusGuard</h2>
+            <div class="instructions-images">
+                <figure>
+                    <img src="path/to/step1-chrome-store.jpg" alt="Step 1: Search for FocusGuard in the Chrome Web Store">
+                    <figcaption>Step 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="path/to/step2-extension-page.jpg" alt="Step 2: View FocusGuard details page">
+                    <figcaption>Step 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="path/to/step3-add-button.jpg" alt="Step 3: Click 'Add to Chrome' button">
+                    <figcaption>Step 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="path/to/step4-confirm.jpg" alt="Step 4: Confirm installation">
+                    <figcaption>Step 4</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="bottom-grid">
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>What is FocusGuard?</summary>
+                    <p>FocusGuard is a browser extension that helps you stay focused with a customizable timer and automatic blocking of distracting websites.</p>
+                </details>
+                <details>
+                    <summary>How does it work?</summary>
+                    <p>Set a timer for your session; during that time, chosen sites are blocked, with gentle reminders to keep you on track.</p>
+                </details>
+                <details>
+                    <summary>What are the benefits of using FocusGuard?</summary>
+                    <p>Improved focus, increased productivity, better time management, and reduced distractions from social media and other sites.</p>
+                </details>
+                <details>
+                    <summary>How can I customize FocusGuard?</summary>
+                    <p>Set custom timer durations, choose which websites to block, add password protection, and adjust reminder frequency.</p>
+                </details>
+                <details>
+                    <summary>Is FocusGuard free?</summary>
+                    <p>Yes, FocusGuard is completely free to download and use.</p>
+                </details>
+                <details>
+                    <summary>Can I use it on multiple devices?</summary>
+                    <p>Yes — install it on any Chrome browser where you’re signed in with the same Google account.</p>
+                </details>
+            </section>
+
+            <section id="details">
+                <h2>Extension Details</h2>
+                <dl class="details-list">
+                    <dt>Name</dt>
+                    <dd id="name">FocusGuard</dd>
+                    <dt>Rating</dt>
+                    <dd id="rating">4.9/5 stars</dd>
+                    <dt>File Size</dt>
+                    <dd id="file-size">120 KB</dd>
+                    <dt>Version</dt>
+                    <dd id="version">1.0.0</dd>
+                    <dt>Developer</dt>
+                    <dd id="developer">BYUI/CS (CSE170-04)</dd>
+                    <dt>Last Updated</dt>
+                    <dd id="last-updated">March 2026</dd>
+                </dl>
+            </section>
         </div>
-    </div>
-    <section id="details"> 
-        <h2>Details</h2>
-        <p id="name">Study Timer Extension</p>
-        <p id="description">Description: A simple study timer to help you stay focused.</p>
-        <p id="rating">Rating: 4.9/5 stars</p>
-        <p id="file-size">File Size: 100 KB</p>
-        <p id="version">Version: 1.0.0</p>
-        <p id="developer">Developer: BYUI/CS (CSE170-04)</p>
-        <p id="last-updated">Last Updated: 2026-XX-XX</p>
-    </section>  
     </main>
-    <footer>
-        <div class="logo">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/logo.png" alt="fb icon">
-            </a>
-        </div>
-        <div class="copyrights">
-            <h4 id="copyright">Study Timer Extension© 2026</h4>
-            <h4 id="byui">BYUI/CS</h4>
-        </div>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://tiktok.com" target="_blank">
-                <img src="images/tiktok.png" alt="tiktok icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/insta.jpg" alt="instagram icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.jpg" alt="twitter icon">
-            </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="FocusGuard logo">
+            </div>
+
+            <div class="footer-center">
+                <p class="copyright">FocusGuard © 2026</p>
+                <p class="credit">Developed by BYUI/CS (CSE170-04)</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><img src="images/tiktok.png" alt="TikTok"></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="images/insta.jpg" alt="Instagram"></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter/X"><img src="images/twitter.jpg" alt="Twitter/X"></a>
+            </div>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('#faq details').forEach(detail => {
+            detail.addEventListener('toggle', function () {
+                if (this.open) {
+                    document.querySelectorAll('#faq details').forEach(other => {
+                        if (other !== this) other.open = false;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

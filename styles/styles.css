@@ -1,191 +1,352 @@
-/* Webpage CSS file */
-
-/* Headings */
-.oxanium {
-    font-family: "Oxanium", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+/* Color Scheme Variables */
+:root {
+    --primary: #8075FF;
+    --primary-dark: #5F55CC;
+    --primary-light: #A39BFF;
+    --accent: #6FA9C9;
+    --background: #232528;
+    --surface: #2F3238;
+    --text-primary: #f0f0f0;
+    --text-secondary: #b0b0b0;
+    --border: #4a4a55;
 }
 
-/* Body text */
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
+/* ALL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body – Poppins regular */
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-style: normal;
+    line-height: 1.6;
 }
 
-/* Buttons / UI elements */
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-/* Header CSS */
+/* Header – Oxanium for h1 */
 header {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    justify-items: center;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to bottom, var(--surface), transparent);
 }
 
 header img {
-    width: 100px;
-    transition: transform 1s;
-    margin-top: 10px;
-    border: 1px solid black;
+    width: 80px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
 }
 
-/* header img:hover {
-    transform: matrix(1, 0.3, 0, 1, 0, 50) translateX(500px) scale(1.5);
-} */
+header img:hover {
+    transform: scale(1.1);
+}
 
 header h1 {
     font-family: 'Oxanium', sans-serif;
     font-weight: 700;
-    letter-spacing: 2px;
-    position: absolute;
-    justify-self: center;
-    align-self: center;
-    font-size: 48px;
-}
-
-hr {
-    width: 99%;
-}
-
-/* Body CSS */
-
-body {
+    font-size: 2.8rem;
+    letter-spacing: 1.5px;
+    color: var(--primary);
     margin: 0;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    text-align: center;
-    max-width: 1000px;
-    width: 100%;
-    justify-self: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    gap: 20px;
-}
-
-main h2 {
-    grid-column: 1 / 3;
+/* Headings – Oxanium */
+h2 {
     font-family: 'Oxanium', sans-serif;
     font-weight: 700;
+    color: var(--primary);
     letter-spacing: 1px;
-    margin-bottom: 0px;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-main p {
-    grid-column: 1 / 3;
-    margin-top: 0px;
-    margin-bottom: 20px;
+/* Main container */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 4rem;
 }
 
-main button {
-    width: 200px;
-    height: 50px;
-    grid-column: 1 / 3;
-    background-color: aliceblue;
-    color: black;
+/* Hero */
+.hero {
+    text-align: center;
+}
+
+.hero button {
+    margin: 2rem 0 1rem;
+}
+
+/* Button – Poppins medium */
+button {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.05em;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(128, 117, 255, 0.4);
 }
 
-main ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    grid-column: 1 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 20px;
+button:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #5a8aa3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(128, 117, 255, 0.5);
 }
 
-main li {
-    margin: 10px;
-    background-color: bisque;
+/* Video placeholder */
+.video-placeholder {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
 }
 
-main details {
-    font-weight: 500;
+.video-thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--surface);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-main details p {
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    color: rgba(255,255,255,0.85);
+    pointer-events: none;
+}
+
+.video-caption {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
-#faq div {
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
+/* Instructions – 2×2 grid */
+.instructions {
+    max-width: 1100px;
+    margin: 0 auto 4rem;
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
 }
 
-#details {
-    grid-column: 1 / 3;
-    margin-bottom: 15px;
+.instructions-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
 }
 
-#details p {
-    margin: 10px;
+.instructions-images figure {
+    margin: 0;
+    background: var(--background);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid var(--border);
 }
 
-/* Footer CSS */
-footer {
-    border-top: 5px solid black;
+.instructions-images figcaption {
+    text-align: center;
+    margin-top: 0.9rem;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.15rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Bottom grid: FAQ left & Details right */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#faq, #details {
+    background: var(--surface);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+#faq details {
+    margin: 1rem 0;
+    border: none;
+    background: transparent;
+}
+
+#faq summary {
+    background: var(--primary-dark);
+    color: white;
+    padding: 1.1rem 1.4rem;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+#faq p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Details – left/right alignment */
+.details-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.8rem 2rem;
+    align-items: baseline;
+    font-size: 1.05rem;
+}
+
+.details-list dt {
+    font-weight: bold;
+    color: var(--primary-light);
+    text-align: left;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.details-list dd {
+    margin: 0;
+    text-align: right;
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Footer – logo left, social 2×2 right */
+.footer {
+    background: var(--surface);
+    border-top: 5px solid #000;
+    padding: 2rem 3rem;
     width: 100%;
-    background-color: gray;
-    padding: 20px 40px;
     box-sizing: border-box;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    font-family: 'Oxanium', sans-serif;
-    font-weight: 700;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.social {
-    display: grid;
+.footer-logo {
     flex: 1;
-    grid-template-columns: repeat(2, 50px);
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.social img {
-    width: 40px;
-    height: auto;
-    display: block;
-    border-radius: 15px;
-}
-
-footer .logo {
     display: flex;
-    flex: 1;
     justify-content: flex-start;
 }
 
-footer .logo img {
+.footer-logo img {
     width: 60px;
     height: auto;
+    border-radius: 12px;
 }
 
-.copyrights {
+.footer-center {
     flex: 2;
     text-align: center;
+    color: var(--text-secondary);
 }
 
-.copyrights h4 {
-    margin: 5px 0;
+.footer-center .copyright,
+.footer-center .credit {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.footer-center .copyright {
+    font-weight: 500;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.footer-center .credit {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.social-links {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    grid-template-rows: repeat(2, 48px);
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.social-links img {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+}
+
+/* Smaller Devices */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-logo,
+    .social-links {
+        justify-content: center;
+    }
+    .social-links {
+        gap: 12px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .instructions {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+    .instructions-images {
+        grid-template-columns: 1fr;
+    }
+    .bottom-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
 }
