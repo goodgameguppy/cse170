@@ -1,8 +1,24 @@
 /* Webpage CSS file */
-.ranchers-regular {
-  font-family: "Ranchers", sans-serif, Arial, Verdana, Georgia;
-  font-weight: 400;
-  font-style: normal;
+
+/* Headings */
+.oxanium {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Body text */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Buttons / UI elements */
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /*header CSS*/
@@ -21,15 +37,13 @@
         transform: matrix(1, 0.3, 0, 1, 0, 50) translateX(500px) scale(1.5);
 } */
     header h1 {
-        font-family: 'Ranchers';
-        letter-spacing: 1px;
-        margin-right: 3em;
-    }
-    header h2 {
-        letter-spacing: 1px;
+        font-family: 'Oxanium', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
         position: absolute;
         justify-self: center;
         align-self: center;
+        font-size: 48px;
 }
     hr {
         width: 99%;
