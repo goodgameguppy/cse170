@@ -1,5 +1,4 @@
 /* Webpage CSS file */
-
 .ranchers-regular {
   font-family: "Ranchers", sans-serif; Arial; Verdana; Georgia;
   font-weight: 400;
@@ -8,65 +7,131 @@
 
 /*header CSS*/
     header {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        justify-items: center;
-    }
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    justify-items: center;
+}
     header img {
-        width: 100px;
-        transition: transform 1s;
-    }
-    header img:hover {
+    width: 100px;
+    transition: transform 1s;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+    /* header img:hover {
         transform: matrix(1, 0.3, 0, 1, 0, 50) translateX(500px) scale(1.5);
-    }
+} */
     header h1 {
         font-family: 'Ranchers';
           letter-spacing: 1px;
           margin-right: 3em;
     }
+        letter-spacing: 1px;
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+}
     hr {
         width: 99%;
+}
+    
+/*body CSS*/
+
+    body{
+        margin: 0;
     }
 
-/*body CSS*/
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         text-align: center;
-        width: 800px;
+        width: 1000px;
         justify-self: center;
         font-family: verdana; arial; geogia;
+        gap: 20px;
     }
     main h2{
         grid-column: 1 / 3;
         font-family: 'Ranchers';
         letter-spacing: 1px;
+        margin-bottom: 0px;
     }
     main p{
         grid-column: 1 / 3;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
     main button {
-        width: 100px;
+        width: 200px;
+        height: 50px;
+        font-family: roboto;
+        font-size: 1.05em;
+        border: 2px solid black;
+        border-radius: 10px;
         grid-column: 1 / 3;
         background-color: aliceblue;
         color: black;
+        margin: 15px;
     }
     main ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        grid-column: 1 / 3;
         display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
-        gap: 5px;
+        gap: 20px;
     }
     main li {
         margin: 10px;
         background-color: bisque;
     }
-    #details {
-        grid-column: 1 / 3;
+    #faq div {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
     }
+    #details {
+        margin-bottom: 15px;
+    }
+    #details p {
+        margin: 10px;
+    }
+
 
 /*footer CSS*/
     .social img {
         width: 50px;
     }
+
+    footer{
+        width: 100%;
+        background-color: gray;
+        padding: 40px 0;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .social{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .social a{
+        justify-content: center;
+    }
+    
+    footer .logo{
+        width: 10px;
+        height: auto;
+        justify-content: center;
+    
+    }
+
+/*Test Comment*/
 
