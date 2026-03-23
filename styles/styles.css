@@ -1,6 +1,6 @@
 /* Webpage CSS file */
 .ranchers-regular {
-  font-family: "Ranchers", sans-serif; Arial; Verdana; Georgia;
+  font-family: "Ranchers", sans-serif, Arial, Verdana, Georgia;
   font-weight: 400;
   font-style: normal;
 }
@@ -89,7 +89,7 @@ main {
     text-align: center;
     width: 1000px;
     justify-self: center;
-    font-family: verdana; arial; geogia;
+    font-family: verdana, arial, geogia;
     gap: 20px;
 }
 main h2{
