@@ -270,13 +270,21 @@ button:hover {
 }
 
 .footer-logo {
-    flex: 1;
+    flex: 0 1 auto;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+.footer-logo a{
+    display: block;
+    width: max-content;
+    height: auto;
+    line-height: 0;
+    cursor: pointer;
 }
 
 .footer-logo img {
-    width: 60px;
+    width: 80px;
     height: auto;
     border-radius: 12px;
 }
