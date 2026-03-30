@@ -111,30 +111,6 @@ button:hover {
     box-shadow: 0 8px 25px rgba(128, 117, 255, 0.5);
 }
 
-/* Video placeholder */
-.video-placeholder {
-    max-width: 800px;
-    margin: 2rem auto;
-    text-align: center;
-}
-
-.video-thumb {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: var(--surface);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-.video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .play-overlay {
     position: absolute;
     top: 50%;
@@ -143,14 +119,6 @@ button:hover {
     font-size: 6rem;
     color: rgba(255,255,255,0.85);
     pointer-events: none;
-}
-
-.video-caption {
-    margin-top: 1rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
 }
 
 /* Instructions – 2×2 grid */
